@@ -10,7 +10,7 @@ async function main() {
   const OrganizationTokenFactory: OrganizationToken__factory = await ethers.getContractFactory("OrganizationToken") as OrganizationToken__factory;
   const token: OrganizationToken = await OrganizationTokenFactory.deploy("OrgToken", "OTK", ethers.parseUnits("1000000", 18)) as OrganizationToken;
   await token.deployed();
-  console.log("Token deployed to:", token.address);
+  console.log("Token deployed to-:", token.address);
 
   // Deploy Vesting Contract
 //   const VestingFactory: Vesting__factory = await ethers.getContractFactory("Vesting") as Vesting__factory;
